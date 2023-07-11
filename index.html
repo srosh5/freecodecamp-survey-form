@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <form id="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <fieldset>
+            <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your full name"
+                    required /></label>
+            <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email address"
+                    required /></label>
+            <label id="number-label">Age: (optional) <input id="number" type="number" min="14" max="90"
+                    placeholder="Enter your age in years" /></label>
+            <label id="dropdown-label">Which option best describes your current role?
+                <select id="dropdown" required>
+                    <option disabled value="">(select one)</option>
+                    <option value="1">Student</option>
+                    <option value="2">Part-time work</option>
+                    <option value="3">Full-time work</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="recommend-label">Would your recommend us to a friend?
+                <label id="yes-label"><input required class="inline" type="radio" name="recommend"
+                        value="yes" />Yes</label>
+                <label id="maybe-label"><input required class="inline" type="radio" name="recommend"
+                        value="maybe" />Maybe</label>
+                <label id="no-label"><input required class="inline" type="radio" name="recommend"
+                        value="no" />No</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="improved-label">What would you like to see improved?
+                <label><input value="1" type="checkbox" class="inline" />Python</label>
+                <label><input value="2" type="checkbox" class="inline" />JavaScript</label>
+                <label><input value="3" type="checkbox" class="inline" />HTML</label>
+                <label><input value="4" type="checkbox" class="inline" />CSS</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="textarea-label">Any other recommendations?<textarea id="textarea" rows="3" cols="30"
+                    placeholder="Enter any recommendations you have here"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
